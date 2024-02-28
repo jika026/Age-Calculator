@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 94%);
+}
+main {
+  width: 600px;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem 1.5rem 15rem 1.5rem;
+}
+form > div:first-child {
+  display: flex;
+  column-gap: 1.5rem;
+}
+form > div:first-child div {
+  display: flex;
+  flex-direction: column;
+}
+form div:first-child div input {
+  max-width: 120px;
+  height: 50px;
+}
+label {
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(0, 1%, 44%);
+  line-height: 40px;
+}
+input {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(0, 0%, 8%);
+  padding: 1rem;
+  border-radius: 5px;
+}
+hr {
+  margin-block: 2rem;
+}
+.age h1,
+.age h1 span {
+  color: hsl(0, 0%, 8%);
+  font-size: 72px;
+  font-weight: 900;
+}
+.age h1 span {
+  color: hsl(259, 100%, 65%);
+}
+.submit {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.submit button {
+  position: relative;
+  bottom: 3.75rem;
+  left: calc(100% - (60px + 1rem));
+}
+.submit hr {
+  position: relative;
+  width: 90%;
+}
+.calculate {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+}
+.calculate i {
+  font-size: 28px;
+}
+input:focus {
+  border-color: red; /* Adjust the color as needed */
+  outline: none; /* Remove default focus outline */
+}
+
+@media screen and (max-width: 898px) {
+  main {
+    width: 450px;
+    border-radius: 1rem 1rem 12rem 1rem;
+  }
+  .age h1,
+  .age h1 span {
+    font-size: 54px;
+  }
+  label {
+    font-size: 10px;
+    line-height: 30px;
+  }
+  input {
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  form div:first-child div input {
+    max-width: 100px;
+    height: 45px;
+  }
+  form > div:first-child {
+    display: flex;
+    column-gap: 1rem;
+  }
+}
+@media screen and (max-width: 568px) {
+  main {
+    width: 320px;
+    border-radius: 1rem 1rem 10rem 1rem;
+  }
+  .age h1,
+  .age h1 span {
+    font-size: 40px;
+  }
+  /* label {
+    font-size: 10px;
+    line-height: 30px;
+  } */
+  input {
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  .error p {
+    font-size: 12px;
+  }
+  form div:first-child div input {
+    max-width: 70px;
+    height: 45px;
+  }
+  form > div:first-child {
+    display: flex;
+    column-gap: 0.75rem;
+  }
+}
